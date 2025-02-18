@@ -14,7 +14,7 @@ interface GoogleResponse {
   credential: string;
 }
 
-export const PrebuildLogin = () => {
+export const HtmlBaseLoginButton = () => {
   // コンポーネントがマウントされる時にコールバックを設定
   useEffect(() => {
     window.handleSignInWithGoogle = async (response: GoogleResponse) => {

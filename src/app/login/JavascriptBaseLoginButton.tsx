@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import Script from 'next/script';
 import { useCallback, useEffect } from 'react';
 
-const GoogleSignIn = () => {
+const JavascriptBaseLoginButton = () => {
   const router = useRouter();
   const supabase = createClient();
 
@@ -59,9 +59,9 @@ const GoogleSignIn = () => {
         }}
       />
       {/* Google Sign-Inボタンのコンテナ */}
-      <div id='signInDiv' className='w-48'></div>
+      <div id='signInDiv'></div>
     </>
   );
 };
 
-export default GoogleSignIn;
+export default JavascriptBaseLoginButton;
